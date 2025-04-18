@@ -73,5 +73,6 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 vim.o.incsearch = true
+vim.o.termguicolors = true
 
 -- vim: ts=2 sts=2 sw=2 et
