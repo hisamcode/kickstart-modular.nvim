@@ -1,7 +1,6 @@
 return {
   {
     'nvimtools/none-ls.nvim',
-    ft = 'go',
     opts = function()
       local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
       local null_ls = require 'null-ls'
@@ -13,6 +12,7 @@ return {
           --   extra_args = { '-rm-unused' },
           -- },
           null_ls.builtins.formatting.golines,
+          null_ls.builtins.formatting.stylua,
         },
         on_attach = function(client, bufnr)
           if client.supports_method 'textDocument/formatting' then
