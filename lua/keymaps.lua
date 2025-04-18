@@ -37,6 +37,15 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- go comments
+vim.keymap.set('n', '<leader>gc', '<cmd>GoCmt<CR>')
+vim.keymap.set('n', '<leader>gta', '<cmd>GoAddTag<CR>')
+vim.keymap.set('n', '<leader>gtr', '<cmd>GoRmTag<CR>')
+vim.keymap.set('n', '<leader>gs', '<cmd>GoFillStruct<CR>')
+vim.keymap.set('n', '<leader>gS', '<cmd>GoFillSwitch<CR>')
+vim.keymap.set('n', '<leader>gf', '<cmd>GoIfErr<CR>')
+vim.keymap.set('n', '<leader>gp', '<cmd>GoIfErr<CR>')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
