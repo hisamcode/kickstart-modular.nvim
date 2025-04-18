@@ -67,3 +67,9 @@ vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+
+vim.bo.tabstop = 4
+vim.bo.softtabstop = 4
+vim.bo.shiftwidth = 4
+vim.bo.expandtab = true
+vim.bo.smartindent = true
