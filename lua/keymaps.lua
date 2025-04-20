@@ -52,6 +52,25 @@ vim.keymap.set({ 'n', 'i' }, '<C-s>', '<ESC>:w<CR>', { desc = 'Save file' })
 --
 vim.keymap.set({ 'n', 'i' }, '<C-\\>', '<cmd>ZenMode<CR>')
 
+vim.keymap.set('n', '<leader>e', function()
+  vim.diagnostic.open_float {
+    scope = 'line',
+    max_width = 100, -- Lebar custom
+  }
+end, { desc = 'Show full error message error lens' })
+
+vim.keymap.set('n', '<leader>so', function()
+  require('telescope.builtin').lsp_document_symbols {
+    symbol_width = 50, -- Lebar kolom
+    symbols = {
+      'function',
+      'method',
+      'struct',
+      'interface',
+    },
+  }
+end, { desc = 'Jump to symbol in file' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
