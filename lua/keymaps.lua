@@ -45,6 +45,7 @@ vim.keymap.set('n', '<leader>gs', '<cmd>GoFillStruct<CR>')
 vim.keymap.set('n', '<leader>gS', '<cmd>GoFillSwitch<CR>')
 vim.keymap.set('n', '<leader>gf', '<cmd>GoIfErr<CR>')
 vim.keymap.set('n', '<leader>gp', '<cmd>GoIfErr<CR>')
+vim.keymap.set('n', '<leader>gr', '<cmd>GoGenReturn<CR>')
 
 vim.keymap.set({ 'n', 'i' }, '<C-s>', '<ESC>:w<CR>', { desc = 'Save file' })
 
