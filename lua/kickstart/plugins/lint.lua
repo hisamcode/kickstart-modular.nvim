@@ -7,7 +7,9 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
-        go = { 'golangcilint' },
+        yaml = { 'actionlint' },
+        -- https://github.com/mfussenegger/nvim-lint/issues/744 golangci-lint issue exited 5, disable for now
+        -- go = { 'golangcilint' },
         -- proto = { 'buf_lint' },
       }
 
